@@ -1,2 +1,11 @@
-<h1> This is my Handlebars Homepage cool... </h1>
-<p>{{stuff}} </p>
+<br /><br /><br /><h1> APPL </h1>
+
+{{! una volta che la API è caricaata questo serve a leggere tutti i suoi chiave valore }}
+{{#each stock}}
+  {{#each this}}<br />
+    {{@key}}
+    |
+    {{this}}
+  {{/each}}
+  <br />
+{{/each}}<br />
